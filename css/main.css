@@ -167,7 +167,7 @@ header {
             li {
                 display: flex;
                 align-items: center;
-                svg.burger-btt {
+                svg {
                     cursor: pointer;
                     background-color: var(--blue);
                     border-radius: 50%;
@@ -190,9 +190,14 @@ header {
             top: -1.5rem;
             right: 0;
             height: 100vh;
-            backdrop-filter: blur(2rem);
+            background-color: var(--background);
+            background-image: url(../images/Group.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(5px);
             z-index: 100;
-            width: 20rem;
+            width: 39rem;
             transition: .6s;
             transform: translateX(100%);
             font-size: 1.6rem;
@@ -200,6 +205,8 @@ header {
             padding-right: 1rem;
             li{
                 margin: 1rem 0;
+                justify-content: center;
+                font-size: 3rem;
             }
             & li:first-child {
                 display: flex;
