@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-6</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- js -->
+    <script src="js/app.js" defer></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="flex-sb">
+            <div class="logo flex-alc gap-10">
+                <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.0766 21.3392C34.9777 21.0757 26.2085 3.75411 26.0766 3.49067C25.6151 2.37102 24.7909 1.41602 23.703 0.757406C20.9667 -0.823274 17.4722 0.0987893 15.8898 2.83205C14.8019 4.70911 14.8678 6.91547 15.9227 8.66081C16.0216 8.89132 24.3953 25.4885 24.5601 25.7519C24.659 26.0154 24.7909 26.2459 24.9227 26.5093C25.3843 27.629 26.2085 28.584 27.2964 29.2426C30.0326 30.8233 33.5271 29.9341 35.1096 27.2009C36.2304 25.3238 36.1315 23.0845 35.0766 21.3392Z" fill="white" fill-opacity="0.4"/>
+                    <path d="M24.956 9.61581C25.9121 8.59495 26.5055 7.21185 26.5055 5.69704C26.5055 2.56861 23.967 0 20.8022 0C18.8571 0 17.1429 0.954995 16.1209 2.43688C15.9231 2.63447 1.71429 20.1537 1.54945 20.3842C0.593406 21.4051 0 22.7881 0 24.303C0 27.4643 2.57143 30 5.7033 30C7.64835 30 9.36264 29.045 10.3846 27.5631C10.5824 27.3326 24.8242 9.84632 24.956 9.61581Z" fill="white"/>
+                    <path d="M49.4502 9.61578C50.4062 8.59492 50.9996 7.21182 50.9996 5.69701C50.9996 2.53564 48.4282 -3.05176e-05 45.2963 -3.05176e-05C43.3513 -3.05176e-05 41.637 0.954964 40.615 2.43685C40.4172 2.63444 26.1755 20.1536 26.0106 20.3842C25.0546 21.405 24.4612 22.7881 24.4612 24.3029C24.4612 27.4643 27.0326 30 30.1645 30C32.1095 30 33.8238 29.045 34.8458 27.5631C35.0766 27.3326 49.2854 9.84629 49.4502 9.61578Z" fill="white"/>
+                </svg>
+                    <p class="hide-mobile">FinanceFlow</p>
+                    <p class="show-mobile">Crypto</p>
+            </div>
+            <nav>
+                <ul class="d-flex p-0">
+                    <li><a href="index.html" class="hide-mobile  active uc m-10">Home</a></li>
+                    <li><a href="index.html" class="hide-mobile  uc m-10">About</a></li>
+                    <li><a href="index.html" class="hide-mobile  uc m-10">Pricing</a></li>
+                    <li><a href="index.html" class="hide-mobile  uc m-10">Tokens</a></li>
+                    <li><a href="index.html" class="hide-mobile  uc m-10">Blog</a></li>
+                    <li><a href="index.html" class="hide-mobile  uc m-10">contact Us</a></li>
+                    <li class="show-mobile">
+                        <svg class="burger-btt" onclick="clickMenu()" xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 -960 960 960" width="45" fill="white"><path d="M140.001-254.616v-59.999h679.998v59.999H140.001Zm0-195.385v-59.998h679.998v59.998H140.001Zm0-195.384v-59.999h679.998v59.999H140.001Z"/></svg>
+                    </li>
+                </ul>
+                <ul class="mobile-menu p-0">
+                    <li onclick="clickMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" fill="white"><path d="M256-213.847 213.847-256l224-224-224-224L256-746.153l224 224 224-224L746.153-704l-224 224 224 224L704-213.847l-224-224-224 224Z"/></svg>
+                    </li>
+                    <li><a href="index.html" class="active uc m-10">Home</a></li>
+                    <li><a href="index.html" class="uc m-10">About</a></li>
+                    <li><a href="index.html" class="uc m-10">Pricing</a></li>
+                    <li><a href="index.html" class="uc m-10">Tokens</a></li>
+                    <li><a href="index.html" class="uc m-10">Blog</a></li>
+                    <li><a href="index.html" class="uc m-10">contact Us</a></li>
+                
+                </ul>
+            </nav>
+            <div class="btt flex-1 flex-alc hide-mobile ">
+                <button class="btt-1">
+                    Download App
+                </button>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- landing -->
+        <div class="landing flex-sb">
+            <div class="info">
+                <h1>Buy, trade, and hold 350+ cryptocurrencies</h1>
+                <p class="mt-0 mb-20 fs-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean dis placerat.</p>
+                <div class="buttons d-flex gap-10">
+                    <button class="btt-1 uc">DOWNLEAD APP</button>
+                    <button class="btt-2 uc">view pricing</button>
+                </div>
+            </div>
+            <div class="image">
+                <svg width="900" height="600" viewBox="0 0 359 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.8003 9.68568C31.8003 4.65076 35.8819 0.569153 40.9168 0.569153H317.619C322.654 0.569153 326.736 4.65076 326.736 9.68568V201.805H31.8003V9.68568Z" fill="#23213B"/>
+                    <path d="M43.0868 214.516C42.9885 214.761 42.6742 215.282 42.2028 215.399C42.1537 215.743 41.9376 216.43 41.4662 216.43H21.2828C20.8114 216.43 20.5953 215.743 20.5462 215.399C20.0747 215.282 19.7604 214.761 19.6622 214.516H43.0868Z" fill="#23213B"/>
+                    <path d="M338.751 214.516C338.653 214.761 338.338 215.282 337.867 215.399C337.818 215.743 337.602 216.43 337.13 216.43H316.947C316.476 216.43 316.259 215.743 316.21 215.399C315.739 215.282 315.425 214.761 315.326 214.516H338.751Z" fill="#23213B"/>
+                    <path d="M358.294 203.035V201.66H0.00146484V203.035C0.00146484 207.054 0.00146484 209.063 0.772219 210.598C1.45019 211.948 2.532 213.046 3.86261 213.734C5.37529 214.516 7.35552 214.516 11.316 214.516H346.979C350.94 214.516 352.92 214.516 354.433 213.734C355.763 213.046 356.845 211.948 357.523 210.598C358.294 209.063 358.294 207.054 358.294 203.035Z" fill="#1C1B2D"/>
+                    <path d="M148.075 201.66H210.393C210.393 204.343 208.218 206.518 205.535 206.518H152.933C150.25 206.518 148.075 204.343 148.075 201.66Z" fill="#353447"/>
+                    <path d="M40.6612 5.66479C38.3775 5.66479 36.5261 7.5089 36.5261 9.78371V190.428H322.142V9.78372C322.142 7.5089 320.291 5.66479 318.007 5.66479H194.196C193.794 5.66479 193.468 5.9906 193.468 6.39251V9.30335C193.468 9.97319 192.925 10.5162 192.254 10.5162H166.28C165.476 10.5162 164.824 9.86459 164.824 9.06078V6.39251C164.824 5.9906 164.498 5.66479 164.096 5.66479H40.6612Z" fill="#353447"/>
+                </svg>                
+            </div>
+        </div>
+        <div class="landing-list" style="margin-top: 17rem;">
+            <p class="mt-0 mb-20 fs-18 txt-c">Finance flow has been featured on</p>
+            <ul class="p-0 flex-alc fw-bold fs-20">
+                <li class="flex-alc gap-10">
+                    <svg width="46" height="24" viewBox="0 0 46 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7259 23.1624C12.7573 24.111 11.1865 24.1097 10.2196 23.1594L0.963605 14.0631C-0.000981644 13.1151 0.000361383 11.5812 0.966608 10.6349L10.2226 1.56974C11.1888 0.62341 12.755 0.622094 13.7229 1.5668L23.0107 10.632C23.981 11.579 23.9823 13.1174 23.0137 14.066L13.7259 23.1624Z" fill="#0328EE"/>
+                        <path d="M26.5205 23.1585C25.5537 24.1087 23.9828 24.1101 23.0142 23.1614L13.7264 14.0651C12.7578 13.1165 12.7592 11.5781 13.7294 10.631L23.0172 1.56588C23.9851 0.62118 25.5513 0.622494 26.5175 1.56882L35.7735 10.634C36.7398 11.5803 36.7411 13.1142 35.7765 14.0621L26.5205 23.1585Z" fill="white"/>
+                        <path d="M36.0045 23.1604C35.0368 24.1096 33.4662 24.1096 32.4984 23.1604L23.2249 14.0638C22.2582 13.1155 22.2595 11.5791 23.2279 10.6324L32.5014 1.56698C33.4685 0.621634 35.0345 0.621634 36.0016 1.56698L45.275 10.6324C46.2434 11.5791 46.2448 13.1155 45.278 14.0638L36.0045 23.1604Z" fill="#0328EE"/>
+                    </svg>
+                    <span>Company</span>
+                </li>
+                <li class="flex-alc gap-10">
+                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2098 0.614868H14.7308C14.263 0.614868 13.8838 0.994081 13.8838 1.46186V25.309C13.8838 25.7768 14.263 26.156 14.7308 26.156H19.2098C19.6776 26.156 20.0568 25.7768 20.0568 25.309V1.46186C20.0568 0.994081 19.6776 0.614868 19.2098 0.614868Z" fill="white"/>
+                        <path d="M28.339 26.1558C31.237 26.1558 33.5863 23.8065 33.5863 20.9086C33.5863 18.0106 31.237 15.6613 28.339 15.6613C25.4411 15.6613 23.0918 18.0106 23.0918 20.9086C23.0918 23.8065 25.4411 26.1558 28.339 26.1558Z" fill="#0328EE"/>
+                        <path d="M28.339 11.1094C31.237 11.1094 33.5863 8.76009 33.5863 5.86211C33.5863 2.96414 31.237 0.614868 28.339 0.614868C25.4411 0.614868 23.0918 2.96414 23.0918 5.86211C23.0918 8.76009 25.4411 11.1094 28.339 11.1094Z" fill="#0328EE"/>
+                        <path d="M5.60174 26.1558C8.49971 26.1558 10.849 23.8065 10.849 20.9086C10.849 18.0106 8.49971 15.6613 5.60174 15.6613C2.70376 15.6613 0.354492 18.0106 0.354492 20.9086C0.354492 23.8065 2.70376 26.1558 5.60174 26.1558Z" fill="#0328EE"/>
+                    </svg>   
+                    <span>Company</span>                     
+                </li>
+                <li class="flex-alc gap-10">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.6021 12.775C18.8417 12.775 15.7892 9.73412 15.7892 5.9969C15.7892 5.50943 15.8473 5.04518 15.9401 4.58093H6.88721C3.38211 4.58093 0.538574 7.41286 0.538574 10.8948V22.5591C0.538574 26.0526 3.38211 28.8729 6.88721 28.8729H18.6096C22.1263 28.8729 24.9582 26.041 24.9582 22.5591V12.3456C24.2386 12.6125 23.4378 12.775 22.6021 12.775Z" fill="#0328EE"/>
+                        <path d="M23.1236 10.4338C25.8511 10.4338 28.0563 8.24019 28.0563 5.52432C28.0563 2.82006 25.8511 0.614868 23.1236 0.614868C20.3961 0.614868 18.1909 2.80845 18.1909 5.52432C18.1909 8.22858 20.3961 10.4338 23.1236 10.4338Z" fill="white"/>
+                    </svg>
+                    <span>Company</span>                                               
+                </li>
+                <li class="flex-alc gap-10">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0032 28.8288C5.08841 28.8288 0.3125 24.0162 0.3125 18.1381C0.3125 12.2601 5.08841 7.44751 11.0032 7.44751C16.8812 7.44751 21.6939 12.2234 21.6939 18.1381C21.6571 24.0162 16.8812 28.8288 11.0032 28.8288Z" fill="#0328EE"/>
+                        <path d="M26.8052 0.614868H12.7248C11.7739 0.614868 11.0031 1.38571 11.0031 2.3366V16.4171C11.0031 17.368 11.7739 18.1388 12.7248 18.1388H26.8052C27.7561 18.1388 28.527 17.368 28.527 16.4171V2.3366C28.527 1.38571 27.7561 0.614868 26.8052 0.614868Z" fill="white"/>
+                    </svg>
+                    <span>Company</span>                      
+                </li>
+                <li class="flex-alc gap-10">
+                    <svg width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.59822 31.424H0.83667V12.0858H11.1956V23.8267C11.1956 28.022 7.79597 31.424 3.59822 31.424Z" fill="#0328EE"/>
+                        <path d="M25.0081 12.0858C25.0081 5.41224 19.5983 0 12.9223 0C12.336 0 11.7596 0.0443424 11.1954 0.125637V12.0858H25.0081Z" fill="#0328EE"/>
+                        <path d="M21.0948 24.826C23.744 23.745 25.0153 20.7212 23.9344 18.072C22.8534 15.4228 19.8295 14.1515 17.1803 15.2324C14.5311 16.3134 13.2598 19.3373 14.3408 21.9865C15.4218 24.6357 18.4457 25.907 21.0948 24.826Z" fill="white"/>
+                    </svg>
+                    <span>Company</span>                      
+                </li>
+            </ul>
+        </div>
+        <!-- end landing -->
+        <!-- portfolio -->
+        <div class="portfolio">
+            <div class="main-ttl">
+                <h2>Build your crypto portfolio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+            </div>
+            <div class="p-wrapper d-flex gap-30">
+                <div>
+                    <div class="box-1">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="68" height="68" rx="20" fill="#0328EE"/>
+                            <g opacity="0.84992" clip-path="url(#clip0_2_515)">
+                            <path opacity="0.4" d="M15.7513 22.5122H39.5485C40.6494 22.5122 41.5429 23.4052 41.5429 24.5055C41.5429 25.6057 40.6494 26.4988 39.5485 26.4988H15.7513C14.6504 26.4988 13.7569 25.6057 13.7569 24.5055C13.7569 23.4052 14.6504 22.5122 15.7513 22.5122Z" fill="white"/>
+                            <mask id="mask0_2_515" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="37" y="14" width="18" height="22">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.4186 35.4653V14H54.5797V35.4653H37.4186Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_2_515)">
+                            <path d="M38.7655 14.1832C39.017 14.1832 39.2648 14.2532 39.4838 14.3896L53.7361 23.3658C54.1276 23.6135 54.3665 24.0425 54.3665 24.5055C54.3665 24.9686 54.1276 25.3977 53.7361 25.6453L39.4838 34.6215C39.069 34.8818 38.5446 34.898 38.1154 34.6592C37.6844 34.4223 37.4186 33.9718 37.4186 33.4818V15.5294C37.4186 15.0394 37.6844 14.5889 38.1154 14.3519C38.3183 14.2389 38.5428 14.1832 38.7655 14.1832Z" fill="white"/>
+                            </g>
+                            <path opacity="0.4" d="M52.3188 46.059H28.5216C27.4206 46.059 26.5272 45.1659 26.5272 44.0657C26.5272 42.9653 27.4206 42.0724 28.5216 42.0724H52.3188C53.4197 42.0724 54.3132 42.9653 54.3132 44.0657C54.3132 45.1659 53.4197 46.059 52.3188 46.059Z" fill="white"/>
+                            <mask id="mask1_2_515" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="33" width="18" height="22">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5156 33.1058V54.5711H13.3544V33.1058H30.5156Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask1_2_515)">
+                            <path d="M29.1686 54.3878C28.9172 54.3878 28.6694 54.3178 28.4503 54.1815L14.1981 45.2053C13.8065 44.9575 13.5677 44.5286 13.5677 44.0655C13.5677 43.6025 13.8065 43.1734 14.1981 42.9258L28.4503 33.9496C28.8652 33.6893 29.3896 33.6732 29.8187 33.9118C30.2498 34.1488 30.5156 34.5993 30.5156 35.0893V53.0418C30.5156 53.5317 30.2498 53.9822 29.8187 54.2191C29.6158 54.3322 29.3913 54.3878 29.1686 54.3878Z" fill="white"/>
+                            </g>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_515">
+                            <rect width="42" height="41" fill="white" transform="translate(13 14)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <h3>Send & Receive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+                    </div>
+                    <div class="box-1 mt-30">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="68" height="68" rx="20" fill="#0328EE"/>
+                            <g opacity="0.84992" clip-path="url(#clip0_2_543)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M54.0855 26.1618H45.173C41.0255 26.1691 37.6655 29.4375 37.658 33.472C37.6524 37.5156 41.0161 40.7985 45.173 40.804H54.093V41.4464C54.093 48.5 49.807 52.6709 42.5539 52.6709H23.541C16.286 52.6709 12 48.5 12 41.4464V26.0836C12 19.03 16.286 14.8754 23.541 14.8754H42.5464C49.7995 14.8754 54.0855 19.03 54.0855 26.0836V26.1618ZM21.9751 26.1454H33.8454H33.8528H33.8678C34.7565 26.1418 35.4748 25.4374 35.4711 24.5712C35.4673 23.7068 34.7414 23.008 33.8528 23.0116H21.9751C21.0921 23.0153 20.3756 23.7123 20.3719 24.5731C20.3681 25.4374 21.0865 26.1418 21.9751 26.1454Z" fill="white"/>
+                            <path opacity="0.4" d="M41.5438 34.3961C41.984 36.3934 43.7392 37.7986 45.7431 37.7621H52.583C53.4167 37.7621 54.0931 37.0732 54.0931 36.2216V30.906C54.0912 30.0563 53.4167 29.3656 52.583 29.3638H45.582C43.3026 29.3711 41.4616 31.2587 41.4652 33.5848C41.4652 33.8572 41.492 34.1294 41.5438 34.3961Z" fill="white"/>
+                            <path d="M45.6742 35.6629C46.8365 35.6629 47.7788 34.7228 47.7788 33.5631C47.7788 32.4035 46.8365 31.4634 45.6742 31.4634C44.5118 31.4634 43.5695 32.4035 43.5695 33.5631C43.5695 34.7228 44.5118 35.6629 45.6742 35.6629Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_543">
+                            <rect width="43" height="39" fill="white" transform="translate(12 14)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <h3>100% Secure Wallet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+                    </div>
+                </div>
+                <div class="box-1 p-relative" style="background-color: #0328EE;min-height: 62rem;">
+                    <h3>iOS & Android App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In amet, morbi non at sed neque.</p>
+                    <img class="p-absolute" style="bottom: 0;left: 50%;transform: translateX(-50%); width: 80%;max-width: 34rem;" src="images/iPhones.png" alt="IPHONE IMAGE">
+                </div>
+                <div>
+                    <div class="box-1">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="68" height="68" rx="20" fill="#0328EE"/>
+                            <g opacity="0.84992" clip-path="url(#clip0_2_533)">
+                            <path opacity="0.4" d="M43.7177 13H24.3709C17.3205 13 13.326 16.9946 13.326 24.0448V43.3733C13.326 50.4237 17.3205 54.4183 24.3709 54.4183H43.7177C50.7681 54.4183 54.7442 50.4237 54.7442 43.3733V24.0448C54.7442 16.9946 50.7681 13 43.7177 13Z" fill="white"/>
+                            <path d="M24.4439 28.2605C23.5051 28.2605 22.7319 29.0336 22.7319 29.9908V44.2203C22.7319 45.1591 23.5051 45.9322 24.4439 45.9322C25.4011 45.9322 26.1743 45.1591 26.1743 44.2203V29.9908C26.1743 29.0336 25.4011 28.2605 24.4439 28.2605Z" fill="white"/>
+                            <path d="M34.1083 21.4677C33.1695 21.4677 32.3964 22.2408 32.3964 23.198V44.22C32.3964 45.1589 33.1695 45.9321 34.1083 45.9321C35.0655 45.9321 35.8386 45.1589 35.8386 44.22V23.198C35.8386 22.2408 35.0655 21.4677 34.1083 21.4677Z" fill="white"/>
+                            <path d="M43.6438 35.771C42.6866 35.771 41.9134 36.5442 41.9134 37.5014V44.2203C41.9134 45.1592 42.6866 45.9323 43.6253 45.9323C44.5825 45.9323 45.3557 45.1592 45.3557 44.2203V37.5014C45.3557 36.5442 44.5825 35.771 43.6438 35.771Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_533">
+                            <rect width="42" height="42" fill="white" transform="translate(13 13)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>        
+                        <h3>Send & Receive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+                    </div>
+                    <div class="box-1 mt-30">
+                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="68" height="68" rx="20" fill="#0328EE"/>
+                            <g opacity="0.84992">
+                            <path d="M48.6973 19.5031C46.2007 16.491 42.8316 14.3197 39.05 13.2855C35.2685 12.2514 31.2586 12.4048 27.5677 13.7249C23.877 15.045 20.6851 17.4674 18.4278 20.6614C16.1705 23.8556 14.9579 27.6656 14.9554 31.5716V36.7537" stroke="white" stroke-opacity="0.4" stroke-width="4.92496" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.0117 47.7568C23.6299 50.5201 27.0206 52.4369 30.7448 53.259C34.4691 54.0811 38.3554 53.7707 41.9005 52.368C45.4455 50.9651 48.4862 48.5346 50.6288 45.3911C52.7713 42.2475 53.9172 38.5357 53.9178 34.7361V31.286" stroke="white" stroke-opacity="0.4" stroke-width="4.92496" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.5805 28.2664C23.5696 28.4742 23.5007 28.676 23.3779 28.8512L15.3067 40.2401C15.0841 40.5529 14.7176 40.7317 14.3332 40.7116C13.9487 40.6916 13.603 40.4755 13.4144 40.1413L6.58263 27.9744C6.38463 27.6204 6.39402 27.1863 6.61085 26.8419C6.82627 26.496 7.21182 26.2958 7.61858 26.3171L22.5215 27.095C22.9283 27.1163 23.2908 27.3554 23.4687 27.7219C23.5537 27.8945 23.5902 28.0824 23.5805 28.2664Z" fill="white"/>
+                            <path d="M44.8516 38.6356C44.8588 38.4304 44.9233 38.2301 45.0414 38.0553L52.8076 26.6804C53.0219 26.3679 53.3804 26.1852 53.7599 26.1984C54.1396 26.2116 54.4844 26.4187 54.6762 26.7453L61.6269 38.6321C61.8284 38.9781 61.8267 39.4065 61.6186 39.75C61.4121 40.095 61.0352 40.299 60.6335 40.285L45.9167 39.7731C45.515 39.7592 45.1532 39.5294 44.9714 39.1709C44.8845 39.0021 44.8452 38.8173 44.8516 38.6356Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <h3>Send & Receive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-alc" style="justify-content: center;">
+                <button class="btt-1 uc mt-30">downlead app</button>
+            </div>
+        </div>
+        <div class="d-flex p-wrapper" style="padding: 11rem 17rem; gap: 16rem;">
+            <svg style="min-width: 32rem; margin-top:5rem;" width="502" height="592" viewBox="0 0 502 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.991" y="23.3728" width="262.841" height="545.354" rx="41.1643" transform="rotate(-5.06 1.991 23.3728)" fill="#1C1B2D"/>
+                <rect x="6.23778" y="26.0105" width="255.846" height="538.349" rx="37.6241" transform="rotate(-5.06 6.23778 26.0105)" fill="#23213B"/>
+                <rect x="11.6498" y="155.12" width="1.99879" height="38.0246" rx="0.884738" transform="rotate(-5.06 11.6498 155.12)" fill="#1C1B2D"/>
+                <rect x="15.8861" y="202.964" width="1.99879" height="38.0246" rx="0.884738" transform="rotate(-5.06 15.8861 202.964)" fill="#1C1B2D"/>
+                <rect x="8.47258" y="119.237" width="1.99879" height="19.0123" rx="0.884738" transform="rotate(-5.06 8.47258 119.237)" fill="#1C1B2D"/>
+                <rect x="277.752" y="157.677" width="1.99879" height="60.0389" rx="0.884738" transform="rotate(-5.06 277.752 157.677)" fill="#1C1B2D"/>
+                <rect x="13.9123" y="33.3674" width="241.854" height="523.339" rx="31.0294" transform="rotate(-5.06 13.9123 33.3674)" fill="#353447"/>
+                <rect x="99.0595" y="31.8555" width="70.9572" height="21.0136" rx="10.5068" transform="rotate(-5.06 99.0595 31.8555)" fill="#1C1B2D"/>
+                <rect x="236.995" y="30.6748" width="262.841" height="545.354" rx="41.1643" transform="rotate(3.61 236.995 30.6748)" fill="#1C1B2D"/>
+                <rect x="240.795" y="33.9226" width="255.846" height="538.349" rx="37.6241" transform="rotate(3.61 240.795 33.9226)" fill="#23213B"/>
+                <rect x="226.683" y="162.373" width="1.99879" height="38.0246" rx="0.884738" transform="rotate(3.61 226.683 162.373)" fill="#1C1B2D"/>
+                <rect x="223.659" y="210.308" width="1.99879" height="38.0246" rx="0.884738" transform="rotate(3.61 223.659 210.308)" fill="#1C1B2D"/>
+                <rect x="228.951" y="126.421" width="1.99879" height="19.0123" rx="0.884738" transform="rotate(3.61 228.951 126.421)" fill="#1C1B2D"/>
+                <rect x="489.36" y="205.013" width="1.99879" height="60.0389" rx="0.884738" transform="rotate(3.61 489.36 205.013)" fill="#1C1B2D"/>
+                <rect x="247.273" y="42.3523" width="241.854" height="523.339" rx="31.0294" transform="rotate(3.61 247.273 42.3523)" fill="#353447"/>
+                <rect x="331.675" y="53.6931" width="70.9572" height="21.0136" rx="10.5068" transform="rotate(3.61 331.675 53.6931)" fill="#1C1B2D"/>
+            </svg>
+            <div class="main-ttl" style="text-align: start;">
+                <h3>Earn daily rewards on your idle tokens</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+                <ul class="p-0">
+                    <li class="flex-alc gap-20 mt-10">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_2_579)">
+                            <path opacity="0.4" d="M29.8492 7H15.3484C10.0641 7 7.07007 9.99399 7.07007 15.2783V29.7654C7.07007 35.0497 10.0641 38.0437 15.3484 38.0437H29.8492C35.1336 38.0437 38.1138 35.0497 38.1138 29.7654V15.2783C38.1138 9.99399 35.1336 7 29.8492 7Z" fill="white"/>
+                            <path d="M31.9976 21.8948V27.5382H26.3542" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.9976 27.5381L25.3601 20.9006C25.2436 20.7841 25.1054 20.6916 24.9532 20.6285C24.801 20.5655 24.6378 20.533 24.4731 20.533C24.3083 20.533 24.1452 20.5655 23.993 20.6285C23.8407 20.6916 23.7025 20.7841 23.586 20.9006L20.9708 23.5158C20.8543 23.6323 20.7161 23.7248 20.5639 23.7878C20.4117 23.8509 20.2485 23.8834 20.0838 23.8834C19.919 23.8834 19.7559 23.8509 19.6037 23.7878C19.4514 23.7248 19.3132 23.6323 19.1967 23.5158L13.1863 17.5054" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_579">
+                            <rect width="32" height="32" fill="white" transform="translate(7 7)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="fs-18">Lowest fees in market</span>
+                    </li>
+                    <li class="flex-alc gap-20 mt-10">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_2_587)">
+                            <path d="M22.5917 41.1133C32.3073 41.1133 40.1834 33.2373 40.1834 23.5216C40.1834 13.806 32.3073 5.92993 22.5917 5.92993C12.8761 5.92993 5 13.806 5 23.5216C5 33.2373 12.8761 41.1133 22.5917 41.1133Z" fill="white" fill-opacity="0.4"/>
+                            <path d="M26.0348 12.658C26.0348 12.2125 25.4962 11.9895 25.1813 12.3044L13.711 23.7747C13.5906 23.8953 13.5086 24.0488 13.4754 24.216C13.4422 24.3831 13.4593 24.5564 13.5244 24.7138C13.5896 24.8713 13.7 25.0059 13.8417 25.1006C13.9833 25.1954 14.1499 25.246 14.3203 25.2462H18.6487C18.9248 25.2462 19.1487 25.4701 19.1487 25.7462V34.3856C19.1487 34.831 19.6872 35.0541 20.0022 34.7391L31.4725 23.2689C31.5929 23.1483 31.6749 22.9947 31.7081 22.8276C31.7413 22.6604 31.7242 22.4872 31.659 22.3297C31.5938 22.1723 31.4834 22.0377 31.3418 21.9429C31.2001 21.8482 31.0336 21.7975 30.8632 21.7974H26.5348C26.2587 21.7974 26.0348 21.5735 26.0348 21.2974V12.658Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_587">
+                            <rect width="36" height="37" fill="white" transform="translate(5 5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="fs-18">Fast and secure transactions</span>
+                    </li>
+                    <li class="flex-alc gap-20 mt-10">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_2_594)">
+                            <path d="M17.7086 19.5681V15.3489C17.7086 13.7823 18.3285 12.2799 19.4318 11.1722C20.5351 10.0645 22.0315 9.44214 23.5919 9.44214C25.1522 9.44214 26.6486 10.0645 27.7519 11.1722C28.8553 12.2799 29.4751 13.7823 29.4751 15.3489V19.5681" stroke="white" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.758 18.2656H15.4258C13.2166 18.2656 11.4258 20.0565 11.4258 22.2656V35.6012C11.4258 37.8104 13.2166 39.6012 15.4258 39.6012H31.758C33.9671 39.6012 35.758 37.8104 35.758 35.6012V22.2656C35.758 20.0565 33.9671 18.2656 31.758 18.2656Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_594">
+                            <rect width="25" height="33" fill="white" transform="translate(11 7)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="fs-18">256-bit secure encryption</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex p-wrapper" style="padding: 11rem 0 11rem 17rem; gap: 16rem; gap: 0;">
+            <div class="main-ttl p2nd-w" style="text-align: start;">
+                <h3>Earn daily rewards on your idle tokens</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+                <ul class="p-0">
+                    <li class="flex-alc gap-20 mt-10">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_2_579)">
+                            <path opacity="0.4" d="M29.8492 7H15.3484C10.0641 7 7.07007 9.99399 7.07007 15.2783V29.7654C7.07007 35.0497 10.0641 38.0437 15.3484 38.0437H29.8492C35.1336 38.0437 38.1138 35.0497 38.1138 29.7654V15.2783C38.1138 9.99399 35.1336 7 29.8492 7Z" fill="white"/>
+                            <path d="M31.9976 21.8948V27.5382H26.3542" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.9976 27.5381L25.3601 20.9006C25.2436 20.7841 25.1054 20.6916 24.9532 20.6285C24.801 20.5655 24.6378 20.533 24.4731 20.533C24.3083 20.533 24.1452 20.5655 23.993 20.6285C23.8407 20.6916 23.7025 20.7841 23.586 20.9006L20.9708 23.5158C20.8543 23.6323 20.7161 23.7248 20.5639 23.7878C20.4117 23.8509 20.2485 23.8834 20.0838 23.8834C19.919 23.8834 19.7559 23.8509 19.6037 23.7878C19.4514 23.7248 19.3132 23.6323 19.1967 23.5158L13.1863 17.5054" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_579">
+                            <rect width="32" height="32" fill="white" transform="translate(7 7)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="fs-18">Lowest fees in market</span>
+                    </li>
+                    <li class="flex-alc gap-20 mt-10">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_2_587)">
+                            <path d="M22.5917 41.1133C32.3073 41.1133 40.1834 33.2373 40.1834 23.5216C40.1834 13.806 32.3073 5.92993 22.5917 5.92993C12.8761 5.92993 5 13.806 5 23.5216C5 33.2373 12.8761 41.1133 22.5917 41.1133Z" fill="white" fill-opacity="0.4"/>
+                            <path d="M26.0348 12.658C26.0348 12.2125 25.4962 11.9895 25.1813 12.3044L13.711 23.7747C13.5906 23.8953 13.5086 24.0488 13.4754 24.216C13.4422 24.3831 13.4593 24.5564 13.5244 24.7138C13.5896 24.8713 13.7 25.0059 13.8417 25.1006C13.9833 25.1954 14.1499 25.246 14.3203 25.2462H18.6487C18.9248 25.2462 19.1487 25.4701 19.1487 25.7462V34.3856C19.1487 34.831 19.6872 35.0541 20.0022 34.7391L31.4725 23.2689C31.5929 23.1483 31.6749 22.9947 31.7081 22.8276C31.7413 22.6604 31.7242 22.4872 31.659 22.3297C31.5938 22.1723 31.4834 22.0377 31.3418 21.9429C31.2001 21.8482 31.0336 21.7975 30.8632 21.7974H26.5348C26.2587 21.7974 26.0348 21.5735 26.0348 21.2974V12.658Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_587">
+                            <rect width="36" height="37" fill="white" transform="translate(5 5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="fs-18">Fast and secure transactions</span>
+                    </li>
+                    <li class="flex-alc gap-20 mt-10">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_2_594)">
+                            <path d="M17.7086 19.5681V15.3489C17.7086 13.7823 18.3285 12.2799 19.4318 11.1722C20.5351 10.0645 22.0315 9.44214 23.5919 9.44214C25.1522 9.44214 26.6486 10.0645 27.7519 11.1722C28.8553 12.2799 29.4751 13.7823 29.4751 15.3489V19.5681" stroke="white" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.758 18.2656H15.4258C13.2166 18.2656 11.4258 20.0565 11.4258 22.2656V35.6012C11.4258 37.8104 13.2166 39.6012 15.4258 39.6012H31.758C33.9671 39.6012 35.758 37.8104 35.758 35.6012V22.2656C35.758 20.0565 33.9671 18.2656 31.758 18.2656Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_594">
+                            <rect width="25" height="33" fill="white" transform="translate(11 7)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="fs-18">256-bit secure encryption</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <svg class="pc-img" width="900" height="600" viewBox="0 0 359 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.8003 9.68568C31.8003 4.65076 35.8819 0.569153 40.9168 0.569153H317.619C322.654 0.569153 326.736 4.65076 326.736 9.68568V201.805H31.8003V9.68568Z" fill="#23213B"/>
+                    <path d="M43.0868 214.516C42.9885 214.761 42.6742 215.282 42.2028 215.399C42.1537 215.743 41.9376 216.43 41.4662 216.43H21.2828C20.8114 216.43 20.5953 215.743 20.5462 215.399C20.0747 215.282 19.7604 214.761 19.6622 214.516H43.0868Z" fill="#23213B"/>
+                    <path d="M338.751 214.516C338.653 214.761 338.338 215.282 337.867 215.399C337.818 215.743 337.602 216.43 337.13 216.43H316.947C316.476 216.43 316.259 215.743 316.21 215.399C315.739 215.282 315.425 214.761 315.326 214.516H338.751Z" fill="#23213B"/>
+                    <path d="M358.294 203.035V201.66H0.00146484V203.035C0.00146484 207.054 0.00146484 209.063 0.772219 210.598C1.45019 211.948 2.532 213.046 3.86261 213.734C5.37529 214.516 7.35552 214.516 11.316 214.516H346.979C350.94 214.516 352.92 214.516 354.433 213.734C355.763 213.046 356.845 211.948 357.523 210.598C358.294 209.063 358.294 207.054 358.294 203.035Z" fill="#1C1B2D"/>
+                    <path d="M148.075 201.66H210.393C210.393 204.343 208.218 206.518 205.535 206.518H152.933C150.25 206.518 148.075 204.343 148.075 201.66Z" fill="#353447"/>
+                    <path d="M40.6612 5.66479C38.3775 5.66479 36.5261 7.5089 36.5261 9.78371V190.428H322.142V9.78372C322.142 7.5089 320.291 5.66479 318.007 5.66479H194.196C193.794 5.66479 193.468 5.9906 193.468 6.39251V9.30335C193.468 9.97319 192.925 10.5162 192.254 10.5162H166.28C165.476 10.5162 164.824 9.86459 164.824 9.06078V6.39251C164.824 5.9906 164.498 5.66479 164.096 5.66479H40.6612Z" fill="#353447"/>
+                </svg>
+                    
+            </div>
+        </div>
+
+        <div class="p-3rd d-flex p-relative">
+            <div class="main-ttl" style="text-align: start;">
+                <h3>Explore endless possibilities with FinanceFlow</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+                <button class="btt-1 uc mt-30" style="background-color: white; color: #0328EE;">downlead app</button>
+            </div>
+            <div style="height: 13rem;"> 
+                <svg class="p-absolute" width="667" height="590" viewBox="0 0 667 590" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="348.963" y="14.4504" width="318.694" height="660.844" rx="41.1643" transform="rotate(8.64559 348.963 14.4504)" fill="#1C1B2D"/>
+                    <rect x="352.313" y="19.0049" width="309.702" height="652.846" rx="37.6241" transform="rotate(8.64559 352.313 19.0049)" fill="#23213B"/>
+                    <rect x="321.954" y="172.145" width="1.99808" height="46.9889" rx="0.884738" transform="rotate(8.64559 321.954 172.145)" fill="#1C1B2D"/>
+                    <rect x="313.087" y="230.461" width="1.99808" height="46.9889" rx="0.884738" transform="rotate(8.64559 313.087 230.461)" fill="#1C1B2D"/>
+                    <rect x="328.567" y="128.655" width="2.99712" height="22.9946" rx="0.884738" transform="rotate(8.64559 328.567 128.655)" fill="#1C1B2D"/>
+                    <rect x="635.181" y="252.131" width="2.99712" height="72.9828" rx="0.884738" transform="rotate(8.64559 635.181 252.131)" fill="#1C1B2D"/>
+                    <rect x="358.862" y="29.1018" width="292.719" height="634.851" rx="31.0294" transform="rotate(8.64559 358.862 29.1018)" fill="#353447"/>
+                    <rect x="460.529" y="51.6392" width="85.9174" height="24.9941" rx="12.4971" transform="rotate(8.64559 460.529 51.6392)" fill="#1C1B2D"/>
+                    <rect x="2.98544" y="28.7356" width="318.694" height="660.844" rx="41.1643" transform="rotate(-5.06 2.98544 28.7356)" fill="#1C1B2D"/>
+                    <rect x="7.31876" y="32.3667" width="309.702" height="652.846" rx="37.6241" transform="rotate(-5.06 7.31876 32.3667)" fill="#23213B"/>
+                    <rect x="14.1085" y="188.339" width="1.99808" height="46.9889" rx="0.884738" transform="rotate(-5.06 14.1085 188.339)" fill="#1C1B2D"/>
+                    <rect x="19.311" y="247.095" width="1.99808" height="46.9889" rx="0.884738" transform="rotate(-5.06 19.311 247.095)" fill="#1C1B2D"/>
+                    <rect x="10.2287" y="144.521" width="2.99712" height="22.9946" rx="0.884738" transform="rotate(-5.06 10.2287 144.521)" fill="#1C1B2D"/>
+                    <rect x="337.367" y="191.834" width="2.99712" height="72.9828" rx="0.884738" transform="rotate(-5.06 337.367 191.834)" fill="#1C1B2D"/>
+                    <rect x="16.0735" y="40.6245" width="292.719" height="634.851" rx="31.0294" transform="rotate(-5.06 16.0735 40.6245)" fill="#353447"/>
+                    <rect x="120.186" y="38.4319" width="85.9174" height="24.9941" rx="12.4971" transform="rotate(-5.06 120.186 38.4319)" fill="#1C1B2D"/>
+                </svg>                        
+            </div>
+        </div>
+        <!-- end portfolio -->
+
+        <div class="comments" style="margin-top: 20rem;">
+            <div class="c-ttl flex-sb p-20">
+                <h3 style="font-size: 4.2rem;">What our users say?</h3>
+            <button class="btt-1 uc">downlead app</button>
+            </div>
+            <div class="c-user d-flex gap-20">
+                <div class="box">
+                    <p class="fs-18" style="line-height: 3.2rem;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in”</p>
+                    <div class="user d-flex gap-20">
+                        <img style="width: 6rem; height: 6rem;" src="images/avatar.png" alt="" class="avatar rad-50">
+                        <div class="user-name">
+                            <p class="fw-bold fs-16 mt-0 mb-10">John carter</p>
+                            <p class="fs-16 mt-0">Role, Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box active">
+                    <p class="fs-18" style="line-height: 3.2rem;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in”</p>
+                    <div class="user d-flex gap-20">
+                        <img style="width: 6rem; height: 6rem;" src="images/avatar.png" alt="" class="avatar rad-50">
+                        <div class="user-name">
+                            <p class="fw-bold fs-16 mt-0 mb-10">John carter</p>
+                            <p class="fs-16 mt-0">Role, Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="fs-18" style="line-height: 3.2rem;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in”</p>
+                    <div class="user d-flex gap-20">
+                        <img style="width: 6rem; height: 6rem;" src="images/avatar.png" alt="" class="avatar rad-50">
+                        <div class="user-name">
+                            <p class="fw-bold fs-16 mt-0 mb-10">John carter</p>
+                            <p class="fs-16 mt-0">Role, Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="fs-18" style="line-height: 3.2rem;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in”</p>
+                    <div class="user d-flex gap-20">
+                        <img style="width: 6rem; height: 6rem;" src="images/avatar.png" alt="" class="avatar rad-50">
+                        <div class="user-name">
+                            <p class="fw-bold fs-16 mt-0 mb-10">John carter</p>
+                            <p class="fs-16 mt-0">Role, Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider mt-40">
+                <ul class="p-0 d-flex gap-30">
+                    <li></li>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="video d-flex gap-50">
+            <div class="main-ttl" style="text-align: start;">
+                <h3>Get started today</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+                <ul class="p-0">
+                    <li class="flex-alc gap-10 mt-20">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_13_156)">
+                            <path d="M22.7719 28.1763C16.4229 28.1763 11.0022 29.1913 11.0022 33.2468C11.0022 37.3007 16.3899 38.3523 22.7719 38.3523C29.1193 38.3523 34.5416 37.3373 34.5416 33.2818C34.5416 29.2263 29.1539 28.1763 22.7719 28.1763Z" fill="white"/>
+                            <path opacity="0.4" d="M22.7719 24.3141C27.0947 24.3141 30.5598 20.8043 30.5598 16.4259C30.5598 12.0475 27.0947 8.53613 22.7719 8.53613C18.4492 8.53613 14.9841 12.0475 14.9841 16.4259C14.9841 20.8043 18.4492 24.3141 22.7719 24.3141Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_13_156">
+                            <rect width="24" height="31" fill="white" transform="translate(11 8)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                            
+                        <span class="fs-18">Create a free account</span>
+                    </li>
+                    <li class="flex-alc gap-10 mt-20">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_13_163)">
+                            <path d="M35.5436 15.6538H12.3951C10.186 15.6538 8.39514 17.4447 8.39514 19.6538V30.7249C8.39514 32.934 10.186 34.7249 12.3951 34.7249H35.5436C37.7528 34.7249 39.5436 32.934 39.5436 30.7249V19.6538C39.5436 17.4447 37.7528 15.6538 35.5436 15.6538Z" fill="white" fill-opacity="0.4"/>
+                            <path d="M32.3587 12.1636H10C7.79086 12.1636 6 13.9544 6 16.1636V27.2347C6 29.4438 7.79086 31.2347 10 31.2347H32.3587C34.5678 31.2347 36.3587 29.4438 36.3587 27.2347V16.1636C36.3587 13.9544 34.5678 12.1636 32.3587 12.1636Z" fill="white"/>
+                            <path d="M21.1794 25.7446C23.4137 25.7446 25.225 23.9333 25.225 21.6989C25.225 19.4646 23.4137 17.6533 21.1794 17.6533C18.9451 17.6533 17.1338 19.4646 17.1338 21.6989C17.1338 23.9333 18.9451 25.7446 21.1794 25.7446Z" fill="#0328EE"/>
+                            <path d="M12.0644 20.2924C13.2046 20.2924 14.1288 19.3681 14.1288 18.228C14.1288 17.0878 13.2046 16.1636 12.0644 16.1636C10.9243 16.1636 10 17.0878 10 18.228C10 19.3681 10.9243 20.2924 12.0644 20.2924Z" fill="#0328EE"/>
+                            <path d="M30.2943 27.2348C31.4344 27.2348 32.3587 26.3105 32.3587 25.1704C32.3587 24.0302 31.4344 23.106 30.2943 23.106C29.1542 23.106 28.2299 24.0302 28.2299 25.1704C28.2299 26.3105 29.1542 27.2348 30.2943 27.2348Z" fill="#0328EE"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_13_163">
+                            <rect width="34" height="23" fill="white" transform="translate(6 12)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                            
+                        <span class="fs-18">Start trading</span>
+                    </li>
+                    <li class="flex-alc gap-10 mt-20">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="46" height="46" rx="13" fill="#0328EE"/>
+                            <g clip-path="url(#clip0_13_149)">
+                            <path opacity="0.4" d="M31.6319 16.7876C35.1005 16.7876 37.9238 19.7026 37.9238 23.2853V30.4069C37.9238 33.9809 35.1076 36.8886 31.6461 36.8886H15.915C12.4449 36.8886 9.62025 33.9751 9.62025 30.3923V23.2707C9.62025 19.6967 12.4379 16.7876 15.9008 16.7876H17.2311H31.6319Z" fill="white"/>
+                            <path d="M24.5449 29.1578L28.6617 24.9577C29.0862 24.5236 29.0862 23.825 28.6588 23.3924C28.2315 22.9611 27.5423 22.9626 27.1177 23.3952L24.8633 25.6951V11.1068C24.8633 10.4959 24.3751 10 23.7722 10C23.1708 10 22.684 10.4959 22.684 11.1068V25.6951L20.4282 23.3952C20.0036 22.9626 19.3144 22.9611 18.887 23.3924C18.6733 23.6094 18.5658 23.8926 18.5658 24.1772C18.5658 24.4589 18.6733 24.7421 18.8842 24.9577L23.001 29.1578C23.2062 29.3663 23.4835 29.4841 23.7722 29.4841C24.0623 29.4841 24.3397 29.3663 24.5449 29.1578Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_13_149">
+                            <rect width="29" height="27" fill="white" transform="translate(9 10)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="fs-18">Download app</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-v">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" rx="50" fill="white" fill-opacity="0.2"/>
+                    <path d="M40.9305 62.2345C40.9305 63.3895 42.178 64.1139 43.1812 63.5413L65.2411 50.9515C66.253 50.3741 66.253 48.9152 65.2411 48.3377L43.1812 35.7479C42.178 35.1754 40.9305 35.8998 40.9305 37.0548V62.2345Z" fill="white"/>
+                </svg>
+                    
+            </div>
+        </div>
+        <div class="lastest-news">
+            <div class="main-ttl flex-sb" style="text-align: start;">
+                <h3>Browse our latest news</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non neque orci amet, amet .</p>
+            </div>
+            <div class="lastest-news-wrapper d-flex gap-25">
+                <div class="box p-relative">
+                    <div class="products p-absolute">
+                    <img class="m-0 b-pc" src="images/black-pc.png" alt="">
+                        <div class="text">
+                            <p class="uc fs-14 m-0">Products</p>
+                        </div>
+                    </div>
+                    <h3 class="fs-22 mt-0 mb-20">The Basics about Cryptocurrency</h3>
+                    <p class="fs-18 mt-0 mb-40">Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.</p>
+                    <div class="avatar flex-alc gap-10">
+                        <img class="rad-50" src="images/avatar.png" alt="">
+                        <div class="user">
+                            <p class="fs-16 fw-bold mt-0 mb-10 uc">Alex Turner</p>
+                            <p class="fs-16 uc m-0">August 2, 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box p-relative">
+                    <div class="products p-absolute">
+                    <img class="m-0 b-pc" src="images/black-pc.png" alt="">
+                        <div class="text">
+                            <p class="uc fs-14 m-0">Products</p>
+                        </div>
+                    </div>
+                    <h3 class="fs-22 mt-0 mb-20">The Basics about Cryptocurrency</h3>
+                    <p class="fs-18 mt-0 mb-40">Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.</p>
+                    <div class="avatar flex-alc gap-10">
+                        <img class="rad-50" src="images/avatar.png" alt="">
+                        <div class="user">
+                            <p class="fs-16 fw-bold mt-0 mb-10 uc">Alex Turner</p>
+                            <p class="fs-16 uc m-0">August 2, 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box p-relative">
+                    <div class="products p-absolute">
+                    <img class="m-0 b-pc" src="images/black-pc.png" alt="">
+                        <div class="text">
+                            <p class="uc fs-14 m-0">Products</p>
+                        </div>
+                    </div>
+                    <h3 class="fs-22 mt-0 mb-20">The Basics about Cryptocurrency</h3>
+                    <p class="fs-18 mt-0 mb-40">Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.</p>
+                    <div class="avatar flex-alc gap-10">
+                        <img class="rad-50" src="images/avatar.png" alt="">
+                        <div class="user">
+                            <p class="fs-16 fw-bold mt-0 mb-10 uc">Alex Turner</p>
+                            <p class="fs-16 uc m-0">August 2, 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex-alc" style="justify-content: center;">
+                <button class="btt-2 mt-30">View All Articles</button>
+            </div>
+        </div>
+        <div class="downlead-app">
+            <div class="main-ttl flex-sb" style="text-align: start;">
+                <h3>Download our app</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non neque orci amet, amet .</p>
+            </div>
+            <div class="downlead d-flex">
+                <div class="box">
+                    <h3 style="font-size: 4.2rem; font-weight: bold;">Download for iOS</h3>
+                    <p class="fs-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla integer in pellentesque tortor semper elementum. Felis.</p>
+                    <button class="btt-1 uc flex-alc gap-10">
+                        <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_792)">
+                            <path d="M2.89196 24.0589C3.90895 25.5229 5.29949 27.5247 7.09357 27.5247V27.5212H7.18498C7.86984 27.4777 8.53946 27.2985 9.15543 26.9938H9.17267C9.95229 26.6126 10.8069 26.4128 11.6735 26.4091C12.5034 26.4182 13.3208 26.6135 14.0664 26.9808H14.0716C14.6946 27.297 15.38 27.4686 16.0774 27.483H16.1792C17.9841 27.456 19.1378 25.9391 20.3451 24.1093C21.1739 22.9142 21.8163 21.5984 22.25 20.2076V20.2006C21.5704 19.9123 20.9494 19.5 20.4184 18.9843C19.832 18.4268 19.3666 17.7531 19.0513 17.0055C18.7361 16.2579 18.578 15.4525 18.5868 14.6403C18.6038 13.5861 18.8836 12.5531 19.4003 11.6361C19.9169 10.7192 20.654 9.94782 21.5438 9.39272C20.9766 8.57776 20.2289 7.90699 19.3599 7.43351C18.4909 6.96002 17.5245 6.6968 16.537 6.66468C16.3724 6.64991 16.2249 6.64209 16.0989 6.64209C15.0096 6.71105 13.9425 6.98387 12.9523 7.4466H12.9316C12.4223 7.69534 11.8757 7.8574 11.3139 7.92618C10.7214 7.86295 10.1448 7.6944 9.61074 7.42836H9.59177C8.73578 7.01905 7.80992 6.7787 6.86419 6.72029H6.78658C5.63538 6.75676 4.51323 7.0933 3.52964 7.69705C2.54603 8.3008 1.73459 9.15114 1.17449 10.1651C0.0454163 12.4 -0.282374 14.9595 0.246607 17.41C0.663483 19.7825 1.5618 22.0428 2.88536 24.0494L2.89196 24.0589Z" fill="white"/>
+                            <path d="M11.1 6.344C11.1888 6.35197 11.278 6.35546 11.3674 6.35443C12.0994 6.31719 12.8156 6.12494 13.4691 5.79023C14.1225 5.4555 14.6986 4.98583 15.1599 4.41178C16.1821 3.18276 16.6844 1.59846 16.5586 0C15.0035 0.163702 13.5667 0.911959 12.5349 2.09555C11.5165 3.26402 11.0003 4.79218 11.1 6.344Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_792">
+                            <rect width="23" height="28" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span>App Store</span>
+                    </button>
+                    <div class="d-flex mt-20" style="width: 100%; justify-content: center;">
+                        <img src="images/iPhones.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <h3 style="font-size: 4.2rem; font-weight: bold;">Download for iOS</h3>
+                    <p class="fs-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla integer in pellentesque tortor semper elementum. Felis.</p>
+                    <button class="btt-1 uc flex-alc gap-10">
+                        <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_792)">
+                            <path d="M2.89196 24.0589C3.90895 25.5229 5.29949 27.5247 7.09357 27.5247V27.5212H7.18498C7.86984 27.4777 8.53946 27.2985 9.15543 26.9938H9.17267C9.95229 26.6126 10.8069 26.4128 11.6735 26.4091C12.5034 26.4182 13.3208 26.6135 14.0664 26.9808H14.0716C14.6946 27.297 15.38 27.4686 16.0774 27.483H16.1792C17.9841 27.456 19.1378 25.9391 20.3451 24.1093C21.1739 22.9142 21.8163 21.5984 22.25 20.2076V20.2006C21.5704 19.9123 20.9494 19.5 20.4184 18.9843C19.832 18.4268 19.3666 17.7531 19.0513 17.0055C18.7361 16.2579 18.578 15.4525 18.5868 14.6403C18.6038 13.5861 18.8836 12.5531 19.4003 11.6361C19.9169 10.7192 20.654 9.94782 21.5438 9.39272C20.9766 8.57776 20.2289 7.90699 19.3599 7.43351C18.4909 6.96002 17.5245 6.6968 16.537 6.66468C16.3724 6.64991 16.2249 6.64209 16.0989 6.64209C15.0096 6.71105 13.9425 6.98387 12.9523 7.4466H12.9316C12.4223 7.69534 11.8757 7.8574 11.3139 7.92618C10.7214 7.86295 10.1448 7.6944 9.61074 7.42836H9.59177C8.73578 7.01905 7.80992 6.7787 6.86419 6.72029H6.78658C5.63538 6.75676 4.51323 7.0933 3.52964 7.69705C2.54603 8.3008 1.73459 9.15114 1.17449 10.1651C0.0454163 12.4 -0.282374 14.9595 0.246607 17.41C0.663483 19.7825 1.5618 22.0428 2.88536 24.0494L2.89196 24.0589Z" fill="white"/>
+                            <path d="M11.1 6.344C11.1888 6.35197 11.278 6.35546 11.3674 6.35443C12.0994 6.31719 12.8156 6.12494 13.4691 5.79023C14.1225 5.4555 14.6986 4.98583 15.1599 4.41178C16.1821 3.18276 16.6844 1.59846 16.5586 0C15.0035 0.163702 13.5667 0.911959 12.5349 2.09555C11.5165 3.26402 11.0003 4.79218 11.1 6.344Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_792">
+                            <rect width="23" height="28" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span>App Store</span>
+                    </button>
+                    <div class="d-flex mt-20" style="width: 100%; justify-content: center;">
+                        <img src="images/iPhones.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+        <div class="footer-social flex-sb">
+            <div class="logo flex-alc gap-10">
+                <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.0766 21.3392C34.9777 21.0758 26.2085 3.75414 26.0766 3.4907C25.6151 2.37105 24.7909 1.41605 23.703 0.757437C20.9667 -0.823244 17.4722 0.0988199 15.8898 2.83208C14.8019 4.70914 14.8678 6.9155 15.9227 8.66084C16.0216 8.89136 24.3953 25.4885 24.5601 25.7519C24.659 26.0154 24.7909 26.2459 24.9227 26.5094C25.3843 27.629 26.2085 28.584 27.2964 29.2426C30.0326 30.8233 33.5271 29.9342 35.1096 27.2009C36.2304 25.3238 36.1315 23.0846 35.0766 21.3392Z" fill="white" fill-opacity="0.4"/>
+                    <path d="M24.956 9.61581C25.9121 8.59495 26.5055 7.21185 26.5055 5.69704C26.5055 2.56861 23.967 0 20.8022 0C18.8571 0 17.1429 0.954995 16.1209 2.43688C15.9231 2.63447 1.71429 20.1537 1.54945 20.3842C0.593406 21.4051 0 22.7881 0 24.303C0 27.4643 2.57143 30 5.7033 30C7.64835 30 9.36264 29.045 10.3846 27.5631C10.5824 27.3326 24.8242 9.84632 24.956 9.61581Z" fill="white"/>
+                    <path d="M49.4502 9.61581C50.4062 8.59495 50.9996 7.21185 50.9996 5.69704C50.9996 2.53567 48.4282 0 45.2963 0C43.3513 0 41.637 0.954995 40.615 2.43688C40.4172 2.63447 26.1755 20.1537 26.0106 20.3842C25.0546 21.4051 24.4612 22.7881 24.4612 24.303C24.4612 27.4643 27.0326 30 30.1645 30C32.1095 30 33.8238 29.045 34.8458 27.5631C35.0766 27.3326 49.2854 9.84632 49.4502 9.61581Z" fill="white"/>
+                </svg>
+                <span class="fs-18 fw-bold" style="color: white;">FinanceFlow</span>    
+            </div>
+            <div class="social flex-alc gap-20">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="white" fill-opacity="0.5"/>
+                    <path d="M18.0223 12.8438C15.1652 12.8438 12.8884 15.1652 12.8884 17.9777C12.8884 20.8348 15.1652 23.1116 18.0223 23.1116C20.8348 23.1116 23.1562 20.8348 23.1562 17.9777C23.1562 15.1652 20.8348 12.8438 18.0223 12.8438ZM18.0223 21.3259C16.192 21.3259 14.6741 19.8527 14.6741 17.9777C14.6741 16.1473 16.1473 14.6741 18.0223 14.6741C19.8527 14.6741 21.3259 16.1473 21.3259 17.9777C21.3259 19.8527 19.8527 21.3259 18.0223 21.3259ZM24.5402 12.6652C24.5402 11.9955 24.0045 11.4598 23.3348 11.4598C22.6652 11.4598 22.1295 11.9955 22.1295 12.6652C22.1295 13.3348 22.6652 13.8705 23.3348 13.8705C24.0045 13.8705 24.5402 13.3348 24.5402 12.6652ZM27.933 13.8705C27.8438 12.2634 27.4866 10.8348 26.3259 9.67411C25.1652 8.51339 23.7366 8.15625 22.1295 8.06696C20.4777 7.97768 15.5223 7.97768 13.8705 8.06696C12.2634 8.15625 10.8795 8.51339 9.67411 9.67411C8.51339 10.8348 8.15625 12.2634 8.06696 13.8705C7.97768 15.5223 7.97768 20.4777 8.06696 22.1295C8.15625 23.7366 8.51339 25.1205 9.67411 26.3259C10.8795 27.4866 12.2634 27.8438 13.8705 27.933C15.5223 28.0223 20.4777 28.0223 22.1295 27.933C23.7366 27.8438 25.1652 27.4866 26.3259 26.3259C27.4866 25.1205 27.8438 23.7366 27.933 22.1295C28.0223 20.4777 28.0223 15.5223 27.933 13.8705ZM25.7902 23.8705C25.4777 24.7634 24.7634 25.433 23.9152 25.7902C22.5759 26.3259 19.4509 26.192 18.0223 26.192C16.5491 26.192 13.4241 26.3259 12.1295 25.7902C11.2366 25.433 10.567 24.7634 10.2098 23.8705C9.67411 22.5759 9.80804 19.4509 9.80804 17.9777C9.80804 16.5491 9.67411 13.4241 10.2098 12.0848C10.567 11.2366 11.2366 10.567 12.1295 10.2098C13.4241 9.67411 16.5491 9.80804 18.0223 9.80804C19.4509 9.80804 22.5759 9.67411 23.9152 10.2098C24.7634 10.5223 25.433 11.2366 25.7902 12.0848C26.3259 13.4241 26.192 16.5491 26.192 17.9777C26.192 19.4509 26.3259 22.5759 25.7902 23.8705Z" fill="white"/>
+                </svg>
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="white" fill-opacity="0.5"/>
+                    <path d="M25.8571 8H10.1429C8.9375 8 8 8.98214 8 10.1429V25.8571C8 27.0625 8.9375 28 10.1429 28H16.2589V21.2143H13.4464V18H16.2589V15.5893C16.2589 12.8214 17.9107 11.2589 20.4107 11.2589C21.6607 11.2589 22.9107 11.4821 22.9107 11.4821V14.2054H21.5268C20.1429 14.2054 19.6964 15.0536 19.6964 15.9464V18H22.7768L22.2857 21.2143H19.6964V28H25.8571C27.0179 28 28 27.0625 28 25.8571V10.1429C28 8.98214 27.0179 8 25.8571 8Z" fill="white"/>
+                </svg>
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="white" fill-opacity="0.5"/>
+                    <path d="M12.4743 28V14.6219H8.3132V28H12.4743ZM10.3714 12.8322C11.7136 12.8322 12.7875 11.7136 12.7875 10.3714C12.7875 9.07383 11.7136 8 10.3714 8C9.07383 8 8 9.07383 8 10.3714C8 11.7136 9.07383 12.8322 10.3714 12.8322ZM28.0447 28V20.6622C28.0447 17.0828 27.2394 14.3087 23.0336 14.3087C21.0201 14.3087 19.6779 15.4273 19.0962 16.4564H19.0515V14.6219H15.0694V28H19.2304V21.3781C19.2304 19.6331 19.5436 17.9776 21.6913 17.9776C23.8389 17.9776 23.8837 19.9463 23.8837 21.5123V28H28.0447Z" fill="white"/>
+                </svg>
+                    
+            </div>
+        </div>
+
+            <div class="flex-sb">
+                <div class="menu">
+                    <h3 class="uc fs-20 fw-bold">menu</h3>
+                    <div class="d-flex">
+                        <ul>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">tokens</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="downlead">
+                    <h4 class="fs-18 fw-bold mt-0 mb-10">Download our Application</h4>
+                    <p class="fs-18 mt-0 mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla integer </p>
+                    <div class="buttons d-flex gap-10">
+                        <button class="btt-1 flex-alc gap-10">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.89196 18.0589C3.90895 19.5229 5.29949 21.5247 7.09357 21.5247V21.5212H7.18498C7.86984 21.4777 8.53946 21.2985 9.15543 20.9938H9.17267C9.95229 20.6126 10.8069 20.4128 11.6735 20.4091C12.5034 20.4182 13.3208 20.6135 14.0664 20.9808H14.0716C14.6946 21.297 15.38 21.4686 16.0774 21.483H16.1792C17.9841 21.456 19.1378 19.9391 20.3451 18.1093C21.1739 16.9142 21.8163 15.5984 22.25 14.2076V14.2006C21.5704 13.9123 20.9494 13.5 20.4184 12.9843C19.832 12.4268 19.3666 11.7531 19.0513 11.0055C18.7361 10.2579 18.578 9.45252 18.5868 8.64033C18.6038 7.58608 18.8836 6.55307 19.4003 5.63612C19.9169 4.71917 20.654 3.94782 21.5438 3.39272C20.9766 2.57776 20.2289 1.90699 19.3599 1.43351C18.4909 0.960016 17.5245 0.696796 16.537 0.664683C16.3724 0.64991 16.2249 0.64209 16.0989 0.64209C15.0096 0.711047 13.9425 0.983873 12.9523 1.4466H12.9316C12.4223 1.69534 11.8757 1.8574 11.3139 1.92618C10.7214 1.86295 10.1448 1.6944 9.61074 1.42836H9.59177C8.73578 1.01905 7.80992 0.778701 6.86419 0.720287H6.78658C5.63538 0.756764 4.51323 1.0933 3.52964 1.69705C2.54603 2.3008 1.73459 3.15114 1.17449 4.16506C0.0454163 6.40004 -0.282374 8.95953 0.246607 11.41C0.663483 13.7825 1.5618 16.0428 2.88536 18.0494L2.89196 18.0589Z" fill="white"/>
+                            </svg>
+                            <span class="fw-bold uc">app store</span>
+                        </button>
+                        <button class="btt-1 flex-alc gap-10">
+                            <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_359_200)">
+                                <path d="M16.5185 16.5949L13.0659 13.1357L1.64105 24.7384C1.75026 24.6972 1.85613 24.6476 1.9577 24.59L16.5185 16.5949Z" fill="white"/>
+                                <path d="M0.00850522 1.94011C0.0144238 3.35543 0.107148 22.2237 0.116026 23.4134C0.0902982 23.6611 0.125802 23.9113 0.219399 24.142C0.312996 24.3725 0.4618 24.5765 0.652648 24.7357L12.5668 12.6372L0.600367 0.643555C0.393848 0.785546 0.229684 0.981195 0.125431 1.20957C0.0211803 1.43795 -0.0192362 1.69047 0.00850522 1.94011Z" fill="white"/>
+                                <path d="M17.1586 8.98145L13.5612 12.6345L17.1626 16.2421L22.1126 13.5234C22.7044 13.1957 23.3338 12.3604 22.1126 11.6923L17.1586 8.98145Z" fill="white"/>
+                                <path d="M1.95772 0.659347C1.7996 0.5753 1.62738 0.521278 1.44971 0.5L13.0631 12.1343L16.5156 8.62869L1.95772 0.659347Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_359_200">
+                                <rect width="23" height="25" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="fw-bold uc">play store</span>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p style="border-top: 1px solid rgba(255, 255, 255, .1); padding-top: 2rem;">All rights reserved</p>
+        </div>
+
+    </footer>
+</body>
+</html>
